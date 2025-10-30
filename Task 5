@@ -1,0 +1,59 @@
+Case Study: Online Food Ordering System
+
+Objective: To perform advanced query processing and test its heuristics by designing 
+
+optimized complex queries and their equivalent forms, including recursive queries, for the 
+
+Online Food Ordering System.
+
+1. Join Queries
+
+Query 1: Retrieve all orders along with the corresponding customer's name.
+
+Expected Output:
+
+Query 2: Retrieve all menu items along with the restaurant name that offers them.
+
+Expected Output:
+
+Query 3: Retrieve all orders and their delivery status.
+Expected Output:
+
+INNER JOIN
+
+An INNER JOIN retrieves records that have matching values in both tablesLEFT OUTER JOIN
+
+A LEFT OUTER JOIN retrieves all records from the left table and the matched records 
+
+from the right table. If no match is found, NULL is returned for columns from the right table.
+
+Query: Retrieve all customers, even those who haven’t placed any orders.
+
+Expected Output:
+RIGHT OUTER JOIN
+
+A RIGHT OUTER JOIN retrieves all records from the right table and the matched recordFULL OUTER JOIN
+
+A FULL OUTER JOIN retrieves all records from both tables. If no match is found, NULL 
+
+is returned for unmatched rows from either table.
+
+Query: Retrieve all customers and all orders, even if there is no match.
+
+Expected Output:
+Note: Oracle doesn’t support FULL OUTER JOIN directly. Use UNION of LEFT JOIN and 
+
+RIGHT JOIN.
+
+CROSS JOIN
+
+A CROSS JOIN returns the Cartesian product of the two tables. Every row from the fiSELF JOIN
+
+A SELF JOIN joins a table with itself. It is useful for hierarchical or comparison data.
+
+Query: Retrieve all menu items that belong to the same restaurant as another item.
+Expected Output:
+
+2. Equivalent Queries
+
+Query 1: Retrieve all customers who placed orders using a join (equivalent to 
