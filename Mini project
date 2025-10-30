@@ -1,0 +1,192 @@
+Sure 👍 — here’s a well-structured lab note for your Database Management System (DBMS) based on the Use Case-2: Indexing vario
+
+Aim:
+
+To implement indexing of various IoT devices using a JSON-based document database (MongoDB) for efficient data retrieval.
+
+
+---
+
+Objective:
+
+To create and manage data from different IoT devices in a MongoDB database, apply single and compound indexes (e.g., device_id, location_id), and demonstrate fast retrieval of data such as temperature records.
+
+
+---
+
+Software Requirements:
+
+MongoDB (Community Server)
+
+MongoDB Shell (mongosh) or Compass GUI
+
+JSON editor / Command line
+
+
+
+---
+
+Theory:
+
+An IoT platform collects data from multiple devices located at different places. Efficient storage and retrieval of data are crucial for performance.
+źźź
+MongoDB is ideal for such applications because:
+
+It stores data in JSON-like (BSON) documents.
+
+Supports dynamic schema, useful for various device types.
+
+Provides indexing on one or multiple fields for fast queries.
+
+
+Types of Indexes:
+
+1. Single Field Index: e.g., device_id
+
+
+2. Compound Index: e.g., { device_id: 1, location_id: 1 }
+
+
+3. Text / Geospatial Indexes (for advanced IoT use)
+
+
+
+
+---
+
+Algorithm / Steps:
+
+1. Start MongoDB service.
+
+
+2. Create a new database named IoT_Platform.
+
+
+3. Create a collection named DeviceData.
+
+
+4. Insert sample JSON documents containing:
+
+Device ID
+
+Location ID
+
+Temperature
+
+Timestamp
+
+
+
+5. Create indexes on device_id and location_id.
+
+
+6. Query data using these indexes to verify faster retrieval.
+
+
+
+
+---
+
+JSON Script (MongoDB Commands):
+
+// 1. Create or switch to database
+use IoT_Platform;
+
+// 2. Create a collection and insert sample IoT data
+db.DeviceData.insertMany([
+  {
+    device_id: "D001",
+    location_id: "L001",
+    temperature: 28.5,
+    humidity: 60,
+    timestamp: ISODate("2025-10-25T10:00:00Z")
+  },
+  {
+    device_id: "D002",
+    location_id: "L002",
+    temperature: 30.2,
+    humidity: 55,
+    timestamp: ISODate("2025-10-25T10:05:00Z")
+  },
+  {
+    device_id: "D001",
+    location_id: "L003",
+    temperature: 27.9,
+    humidity: 62,
+    timestamp: ISODate("2025-10-25T10:10:00Z")
+  }
+]);
+
+// 3. Create indexes
+// Single field index
+db.DeviceData.createIndex({ device_id: 1 });
+
+// Compound index
+db.DeviceData.createIndex({ device_id: 1, location_id: 1 });
+
+// 4. Query data using index
+db.DeviceData.find({ device_id: "D001" }).pretty();
+
+// 5. Query by both device_id and location_id
+db.DeviceData.find({ device_id: "D001", location_id: "L003" }).pretty();
+
+// 6. View created indexes
+db.DeviceData.getIndexes();
+
+
+---
+
+Expected Output:
+
+The find() queries return results quickly when indexes exist.
+
+The getIndexes() command lists all created indexes, confirming optimization.
+
+
+Example output (simplified):
+
+[
+  { "v": 2, "key": { "_id": 1 }, "name": "_id_" },
+  { "v": 2, "key": { "device_id": 1 }, "name": "device_id_1" },
+  { "v": 2, "key": { "device_id": 1, "location_id": 1 }, "name": "device_id_1_location_id_1" }
+]
+
+
+---
+
+Result:
+
+Successfully implemented a MongoDB database for IoT devices and demonstrated how indexing on device_id and location_id improves query performance.
+
+
+---
+
+Conclusion:
+
+MongoDB’s JSON-based flexible schema and indexing features make it highly suitable for IoT data storage and retrieval. Indexes significantly reduce query time and improve system efficiency.
+
+
+---
+
+Viva Questions:
+
+1. What is an index in a database?
+
+
+2. Why are indexes important in IoT applications?
+
+
+3. What is the difference between a single-field and a compound index?
+
+
+4. Why is MongoDB preferred for IoT data management?
+
+
+5. How can you view all indexes in a MongoDB collection?
+
+
+
+
+---
+
+Would you like me to format this as a PDF lab record (with your name, college, and experiment number field)? I can generate it for you neatly.
