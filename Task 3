@@ -1,0 +1,660 @@
+
+ 
+
+ 
+
+
+
+Query 2: Find the orders and their delivery time if delivered today.
+
+
+
+SELECT OrderTable.Order_ID, Delivery.Delivery_Time
+
+FROM OrderTable
+
+INNER JOIN Delivery 
+
+    ON OrderTable.Order_ID = Delivery.Order_ID;
+
+
+
+Output:
+
+
+
+
+
+3.	String Functions
+
+
+
+Query 1: Find all customers whose names contain the letter 'a'.
+
+
+
+
+
+Output:
+
+
+
+
+
+Query 2: Display all menu item names in uppercase.
+
+
+
+
+
+Output:
+
+ 
+
+ 
+
+
+
+4.	Set Clauses
+
+
+
+Query 1: Update the payment status of all unpaid orders to 'Paid'.
+
+
+
+
+
+Output:
+
+
+
+
+
+Query 2: Reduce the price of all menu items by 10%.
+
+
+
+
+
+Output:Query 2: Find the total number of menu items offered by each restaurant.
+
+
+
+
+
+Output:
+
+
+
+
+
+Query 3: Find the average price of all menu items.
+
+
+
+
+
+Output:
+
+
+
+
+
+2.	Date Functions
+
+
+
+Query 1: Retrieve orders placed in the last 7 days.
+
+
+
+
+
+Output:
+
+ 
+
+ 
+
+
+
+Query 2: Find the orders and their delivery time if delivered today.
+
+
+
+SELECT OrderTable.Order_ID, Delivery.Delivery_Time
+
+FROM OrderTable
+
+INNER JOIN Delivery 
+
+    ON OrderTable.Order_ID = Delivery.Order_ID;
+
+
+
+Output:
+
+
+
+
+
+3.	String Functions
+
+
+
+Query 1: Find all customers whose names contain the letter 'a'.
+
+
+
+
+
+Output:
+
+
+
+
+
+Query 2: Display all menu item names in uppercase.
+
+
+
+
+
+Output:
+
+ 
+
+ 
+
+
+
+4.	Set Clauses
+
+
+
+Query 1: Update the payment status of all unpaid orders to 'Paid'.
+
+
+
+
+
+Output:
+
+
+
+
+
+Query 2: Reduce the price of all menu items by 10%.
+
+
+
+
+
+Output:
+
+
+
+ 
+
+5.	Operators
+
+
+
+Query 1: Retrieve orders where the total is greater than 600.
+
+
+
+
+
+Output:
+
+
+
+
+
+Query 2: Retrieve menu items that belong to category 'Italian' or have a price less than 350.
+
+
+
+
+Query 2: Find the total number of menu items offered by each restaurant.
+
+
+
+
+
+Output:
+
+
+
+
+
+Query 3: Find the average price of all menu items.
+
+
+
+
+
+Output:
+
+
+
+
+
+2.	Date Functions
+
+
+
+Query 1: Retrieve orders placed in the last 7 days.
+
+
+
+
+
+Output:
+
+ 
+
+ 
+
+
+
+Query 2: Find the orders and their delivery time if delivered today.
+
+
+
+SELECT OrderTable.Order_ID, Delivery.Delivery_Time
+
+FROM OrderTable
+
+INNER JOIN Delivery 
+
+    ON OrderTable.Order_ID = Delivery.Order_ID;
+
+
+
+Output:
+
+
+
+
+
+3.	String Functions
+
+
+
+Query 1: Find all customers whose names contain the letter 'a'.
+
+
+
+
+
+Output:
+
+
+
+
+
+Query 2: Display all menu item names in uppercase.
+
+
+
+
+
+Output:
+
+ 
+
+ 
+
+
+
+4.	Set Clauses
+
+
+
+Query 1: Update the payment status of all unpaid orders to 'Paid'.
+
+
+
+
+
+Output:
+
+
+
+
+
+Query 2: Reduce the price of all menu items by 10%.
+
+
+
+
+
+Output:
+
+
+
+ 
+
+5.	Operators
+
+
+
+Query 1: Retrieve orders where the total is greater than 600.
+
+
+
+
+
+Output:
+
+
+
+
+
+Query 2: Retrieve menu items that belong to category 'Italian' or have a price less than 350.
+
+Query 2: Find the total number of menu items offered by each restaurant.
+
+
+
+
+
+Output:
+
+
+
+
+
+Query 3: Find the average price of all menu items.
+
+
+
+
+
+Output:
+
+
+
+
+
+2.	Date Functions
+
+
+
+Query 1: Retrieve orders placed in the last 7 days.
+
+
+
+
+
+Output:
+
+ 
+
+ 
+
+
+
+Query 2: Find the orders and their delivery time if delivered today.
+
+
+
+SELECT OrderTable.Order_ID, Delivery.Delivery_Time
+
+FROM OrderTable
+
+INNER JOIN Delivery 
+
+    ON OrderTable.Order_ID = Delivery.Order_ID;
+
+
+
+Output:
+
+
+
+
+
+3.	String Functions
+
+
+
+Query 1: Find all customers whose names contain the letter 'a'.
+
+
+
+
+
+Output:
+
+
+
+
+
+Query 2: Display all menu item names in uppercase.
+
+
+
+
+
+Output:
+
+ 
+
+ 
+
+
+
+4.	Set Clauses
+
+
+
+Query 1: Update the payment status of all unpaid orders to 'Paid'.
+
+
+
+
+
+Output:
+
+
+
+
+
+Query 2: Reduce the price of all menu items by 10%.
+
+
+
+
+
+Output:
+
+
+
+ 
+
+5.	Operators
+
+
+
+Query 1: Retrieve orders where the total is greater than 600.
+
+
+
+
+
+Output:
+
+
+
+
+
+Query 2: Retrieve menu items that belong to category 'Italian' or have a price less than 350.
+
+
+
+
+
+Output:
+
+
+
+Query 2: Find the total number of menu items offered by each restaurant.
+
+
+
+
+
+Output:
+
+
+
+
+
+Query 3: Find the average price of all menu items.
+
+
+
+
+
+Output:
+
+
+
+
+
+2.	Date Functions
+
+
+
+Query 1: Retrieve orders placed in the last 7 days.
+
+
+
+
+
+Output:
+
+ 
+
+ 
+
+
+
+Query 2: Find the orders and their delivery time if delivered today.
+
+
+
+SELECT OrderTable.Order_ID, Delivery.Delivery_Time
+
+FROM OrderTable
+
+INNER JOIN Delivery 
+
+    ON OrderTable.Order_ID = Delivery.Order_ID;
+
+
+
+Output:
+
+
+
+
+
+3.	String Functions
+
+
+
+Query 1: Find all customers whose names contain the letter 'a'.
+
+
+
+
+
+Output:
+
+
+
+
+
+Query 2: Display all menu item names in uppercase.
+
+
+
+
+
+Output:
+
+ 
+
+ 
+
+
+
+4.	Set Clauses
+
+
+
+Query 1: Update the payment status of all unpaid orders to 'Paid'.
+
+
+
+
+
+Output:
+
+
+
+
+
+Query 2: Reduce the price of all menu items by 10%.
+
+
+
+
+
+Output:
+
+
+
+ 
+
+5.	Operators
+
+
+
+Query 1: Retrieve orders where the total is greater than 600.
+
+
+
+
+
+Output:
+
+
+
+
+
+Query 2: Retrieve menu items that belong to category 'Italian' or have a price less than 350.
+
+
+
+
+
+Output:
+
+
+
+
+
+
+
+
+
+
+
+
+ 
